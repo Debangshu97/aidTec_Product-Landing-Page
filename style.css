@@ -1,0 +1,194 @@
+ @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+      body{
+       background-color: red;
+       background-image: url('cyberpunk.gif');
+       background-repeat: no-repeat;
+       background-size: cover;
+        
+      }
+     @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+nav {
+  background-color: transparent; /* Transparent background */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+}
+
+.logo {
+  order: 1;
+  padding-left: 40px; /* Increased padding on the left side of the logo */
+}
+
+.logo h1 {
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 26px;
+  margin: 0;
+  padding: 14px 0;
+  text-transform: uppercase;
+}
+
+.nav-items {
+  order: 2;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-items li {
+  margin: 0 10px;
+}
+
+.nav-items li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 16px;
+  padding: 14px 16px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease; /* Transition for background color change */
+}
+
+.nav-items li a:hover {
+  background-color: #555; /* Background color on hover */
+}
+
+.search-container {
+  order: 3;
+  padding-right: 40px; /* Increased padding on the right side of the search container */
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(1px); /* 1px blur effect applied to the form */
+  border: 1px solid #fff; /* White solid border added to the form */
+}
+
+.search-form input[type="text"] {
+  padding: 14px; /* Increased size of the form input bar */
+  border: none;
+  border-radius: 4px;
+  font-family: Arial, sans-serif; /* Simple font for placeholder */
+  font-size: 18px; /* Increased font size of the placeholder */
+  background-color: transparent; /* Removed background color from the form */
+  color: #fff;
+  opacity: 0.8; /* Adjust transparency */
+  font-weight: bold; /* Set the placeholder text to bold */
+}
+
+.search-form input[type="text"]::placeholder {
+  opacity: 1; /* Adjust transparency of placeholder */
+  font-weight: bold; /* Set the placeholder text to bold */
+  color: #fff; /* Set the font color of the placeholder to white */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+/* Navbar styles */
+
+/* ... (Previous navbar styles) ... */
+
+/* Main content styles */
+
+/* Space between the navbar and the divs */
+.space {
+  height: 100px; /* Increased space */
+}
+
+/* Container for div-left and div-right */
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px auto; /* Increased margin and centered horizontally */
+  max-width: 1200px; /* Set a maximum width */
+}
+
+/* Left div */
+.div-left,
+.div-right {
+  flex-basis: calc(50% - 20px); /* Equal width for both divs */
+  backdrop-filter: blur(3px); /* Increased background blur */
+  padding: 20px;
+  height: auto; /* Auto height to fit the contents */
+  transition: transform 0.3s ease, border-color 0.3s ease; /* Added transition for smooth effects */
+  position: relative; /* Added position relative */
+}
+
+/* Text styles inside divs */
+.div-left h1,
+.div-right h1,
+.div-left p,
+.div-right p {
+  color: #fff; /* Text color set to white */
+}
+
+.div-left h1,
+.div-right h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 37px; /* Reduced font size by 1px */
+  margin: 0 0 20px; /* Increased spacing between h1 and p */
+}
+
+.div-left p,
+.div-right p {
+  font-family: Arial, sans-serif;
+  font-size: 23px; /* Reduced font size by 1px */
+  margin: 20px 0; /* Increased vertical spacing between paragraphs */
+  line-height: 1.5;
+}
+
+/* Styles for the sign-up paragraph */
+.sign-up {
+  font-weight: bold;
+  font-size: 31px; /* Reduced font size by 1px */
+}
+
+/* Additional styles for the sign-up paragraph */
+.sign-up {
+  color: #fff;
+  text-decoration: none; /* Removed underline */
+  cursor: pointer;
+}
+
+.sign-up:hover {
+  background-color: rgba(202, 167, 29, 0.737); /* Background color on hover */
+}
+
+/* Hover effect for divs */
+.div-left:hover,
+.div-right:hover {
+  transform: scale(1.05); /* Pop-out effect on hover */
+}
+
+/* Hover effect for contents inside divs */
+.div-left:hover *:not(.sign-up),
+.div-right:hover *:not(.sign-up) {
+  /* filter: brightness(70%); Decreased brightness on hover */
+}
+
+/* Border on hover for divs */
+.div-left:hover::before,
+.div-right:hover::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  border: 0.5px solid #fff; /* White 0.5px border on hover */
+  pointer-events: none;
+  z-index: -1;
+}
